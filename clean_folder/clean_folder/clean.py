@@ -59,10 +59,13 @@ def sort_folder(source_folder):
     except Exception as e:
         print(f"Виникла помилка при сортуванні папки: {str(e)}")
 
-if __name__ == "__main__":
-    import sys
+
+def main():
     if len(sys.argv) != 2:
         print("Потрібно вказати лише шлях до папки для сортування.")
     else:
         source_folder = sys.argv[1]
         sort_folder(source_folder)
+
+if __name__ == "__main__":
+    main()
