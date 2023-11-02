@@ -1,5 +1,6 @@
 import os
 import shutil
+import sys
 
 # Функція для перейменування файлів та папок
 def normalize(name):
